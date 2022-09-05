@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-size: 1.7rem;
+  font-family: 'Poppins';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: steelblue;
+  color:#fff;
+  padding:2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1.site-title {
+  display: block;
+    font-size: 6rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 1.7rem;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+header.App-header {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.score-container p{
+  margin-block-end: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards-container {
+  display: flex;
+  flex-flow: wrap;
+  gap: 2rem;
+}
+
+.card-item {
+  display: flex;
+  color: #000;
+  flex-direction: column;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 2rem;
+  gap: 2rem;
+  overflow: hidden;
+  background: #fff;
+  border: 3px solid #2a952a;
+  border-radius: 1rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card-item:hover {
+  border-color: #88ef88;
 }
