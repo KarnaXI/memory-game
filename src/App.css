@@ -45,23 +45,24 @@ header.App-header {
 
 .instructions-scores {
   display: flex;
-  place-content: space-between;
+  flex-direction: column;
   padding: 0 2rem;
   text-align: center;
   max-width: 1149px;
   margin: auto;
 }
 
-.instructions {
-  display: flex;
-  align-items: center;
+.instructions{
+  text-align: center;
 }
 
 .score-container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
 }
+
 .score-container p{
   margin-block-end: 1rem;
 }
