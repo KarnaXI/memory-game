@@ -36,6 +36,18 @@ header.App-header {
   flex-direction: column;
 }
 
+.instructions-scores {
+  display: flex;
+  place-content: space-between;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.instructions {
+  display: flex;
+  align-items: center;
+}
+
 .score-container {
   display: flex;
   flex-direction: column;
@@ -45,14 +57,46 @@ header.App-header {
   margin-block-end: 1rem;
 }
 
+@media (max-width:1604px) {
+  .instructions-scores{
+    max-width: 1225px;
+    margin:auto;
+  }
+}
+
+@media (max-width:1287px) {
+  .instructions-scores{
+    max-width: 921px;
+    margin:auto;
+  }
+}
+
+@media screen and (max-width:981px) {
+  .instructions-scores{
+    flex-direction: column;
+    place-content: center;
+  }
+  .instructions {
+    display: block;
+  }
+  .score-container {
+    flex-direction: row;
+    align-items: normal;
+    justify-content: space-around;
+  }
+}
+
 .cards-container {
   display: flex;
   flex-flow: wrap;
   gap: 2rem;
+  justify-content: center;
 }
 
 .card-item {
   display: flex;
+  width: 150px;
+  font-size:1.6rem;
   color: #000;
   flex-direction: column;
   text-align: center;
@@ -69,4 +113,5 @@ header.App-header {
 
 .card-item:hover {
   border-color: #88ef88;
+  transform: rotate(2deg);
 }
